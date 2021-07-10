@@ -1,11 +1,14 @@
 * {
     padding: 0;
     margin: 0;
+    /* font-family: 'Poppins', sans-serif; */
 }
 
 html,
 body {
-    font-family:'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container-fluid{
@@ -27,10 +30,9 @@ body {
     font-size: 40px;
     line-height: 53px;
     color: #0069F0;
-
 }
-
 nav {
+    position: fixed;
     background: transparent;
     /* margin-bottom: 25px; */
 }
@@ -139,7 +141,7 @@ nav {
     height: 65vh;
 }
 .caroj{
-    height: 23rem;
+    height: 23vh;
     width: 100%;
 }
 
@@ -194,6 +196,22 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
 }
+@media(max-width: 950px) {
+    #features > .column{
+        display: none !important;
+    }
+    #footer > .feet {
+        display: none !important;
+    }
+}
+@media(min-width: 950px) {
+    #features > .columno{
+        display: none !important;
+    }
+    #footer > .feeto {
+        display: none !important;
+    }
+}
 
 .header > h1 {
    font-size: 3rem;
@@ -205,13 +223,13 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    height: 80vh;
 }
 .card{
     text-align: center;
     align-items: center;
     background: transparent !important;
     border-radius: 10px !important;
-
 }
 .card > img {
     width: 27%;
@@ -223,7 +241,7 @@ nav {
     width: 31%;
 }
 #bidder{
-    margin-bottom: -20px;
+    margin-bottom: -1rem;
 }
 .bida{
     border: 1px #00F0AF solid !important;
@@ -252,11 +270,14 @@ h5.card-title{
     font-size: 0.99rem;
 }
 p.card-text {
-    font-size: smaller;
+    font-size: 12px;
     color: white;
 }
+.card > .card-body {
+    padding: 2rem;
+}
 #rating{
-    margin-bottom: -20px;
+    margin-bottom: 0rem;
 }
 .rater{
     border: 1px #A0616A solid !important;
@@ -293,7 +314,6 @@ p.card-text {
     justify-content: space-evenly;
 }
 #sign_up {
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -301,26 +321,37 @@ p.card-text {
     height: 80vh;
     background: transparent ;
 }
+.up1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50% !important ;
+    height: 80vh;
+    background: transparent;
+}
+.up2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50% !important;
+    height: 80vh;
+    background: transparent;
+}
 .signup{
     position: absolute;
-    width: 15rem;
+    width: 28rem;
     height: 27rem;
-    left: 20rem;
-    bottom: 3rem;
+    left: 21.5rem;
+    top: 2.3rem;
+    z-index: 1;
     background-color: transparent;
 }
-.Yline{
-    position: absolute;
-    height: 1rem;
-    width: 10rem;
-    width: 10rem;
-    bottom: 17rem;
-}
+
 .download{
     position: absolute;  
     border-radius: 50% !important;
-    left: 13rem;
-    bottom: -7rem;
+    right: 6rem;
+    top: 8rem;
     border: none;
     background-color: transparent;
 }
@@ -334,11 +365,14 @@ p.card-text {
 .download > .card-body > h5{
     color: #0069F0;
     font-weight: 900;
+    font-size: 15px;
 }
 
 .download > .card-body > p {
     color: rgba(0, 0, 0, 0.5);
     font-weight: 600;
+    font-size: 11px;
+    
 }
 .download > .card-body > p > span {
     color: #0069F0;
@@ -350,32 +384,43 @@ p.card-text {
 #sign_in {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: center;
     width: 100%;
     height: 79vh;
     background: #000033;
 }
+.in1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50% !important ;
+    height: 80vh;
+    background: transparent;
+}
+.in2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50% !important;
+    height: 80vh;
+    background: transparent;
+}
 .signin{
     position: absolute;
-    width: 15rem;
+    width: 28rem;
     height: 27rem;
-    left: 48.5rem;
-    bottom: 3rem;
+    right: 20.5rem;
+    top: 2.3rem;
+    z-index: 1;
     background-color: transparent;
 }
-.Yline2{
-    position: absolute;
-    height: 1rem;
-    width: 10rem;
-    width: 10rem;
-    bottom: 17rem;
-}
+
 .install{
     position: absolute;  
     border-radius: 50% !important;
-    left: -13rem;
-    bottom: -6rem;
+    left:8rem;
+    top: 8rem;
     border: none;
     background-color: transparent;
 }
@@ -389,62 +434,40 @@ p.card-text {
 .install > .card-body > h5{
     color: #0069F0;
     font-weight: 900;
+    font-size: 15px;
 }
 
 .install > .card-body > p {
     color: rgba(0, 0, 0, 0.5);
     font-weight: 600;
+    font-size: 11px;
+    
 }
 
 
-                                /* DOUBLE FIND ARTISAN & CLIENT */
-#find{
-    background: #000033;
-    width: 100%;
-    height: 130vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
+                                /* DOUBLE ROUND CARD FIND ARTISAN & CLIENT */
+
 #finder1 {
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 50%;
-    height: 130vh;
+    width:100%;
+    height: 50vh;
     background: transparent;
 }
-#finder2 {
+                                     /* ROUND CARD FOR FIND ARTISAN */
+.fartisan{
     position: relative;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     width: 50%;
-    height: 130vh;
-    background: transparent;
-}
-
-                                    /* GRAY PHONE ARTISAN ILLUSTRATOR */
-.Gphone{
-    position: absolute;
-    width: 15rem;
-    height: 27rem;
-    left: 14rem;
-    bottom: 0rem;
-    background-color: transparent;
-}
-.Gline{
-    position: absolute;
-    height: 12rem;
-    width: 5rem;
-    top: 11rem;
-    right: 15.5rem;
+    height: 50vh;
+    background: #000033;
 }
 .artisan{
     position: absolute;  
     border-radius: 50% !important;
-    left: 11rem;
+    left: 13rem;
     top: 0rem;
     border: none;
     background-color: transparent;
@@ -459,38 +482,32 @@ p.card-text {
 .artisan > .card-body > h5{
     color: #6C77AE;
     font-weight: 900;
+    font-size: 15px;
 }
 
 .artisan > .card-body > p {
     color: rgba(0, 0, 0, 0.5);
     font-weight: 600;
+    font-size: 11px;
+    
 }
 .artisan > .card-body > p > span {
     color: #6C77AE;
     font-weight: 700;
 }
-
-                        /* BLUE PHONE CLIENT ILLUSTRATOR*/
-
-.Bphone{
-    position: absolute;
-    width: 15rem;
-    height: 27rem;
-    right: 14rem;
-    bottom: 0rem;
-    background-color: transparent;
-}
-.Bline{
-    position: absolute;
-    height: 12rem;
-    width: 5rem;
-    top: 11rem;
-    left: 15.5rem;
+                                                            /* ROUND CARD FOR FIND CLIENT */
+.fclient {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50vh;
+    background: #000033;
 }
 .client{
     position: absolute;  
     border-radius: 50% !important;
-    right: 11rem;
+    right: 13rem;
     top: 0rem;
     border: none;
     background-color: transparent;
@@ -505,16 +522,71 @@ p.card-text {
 .client > .card-body > h5{
     color: #14A0C6;
     font-weight: 900;
+    font-size: 15px;
 }
 
 .client > .card-body > p {
     color: rgba(0, 0, 0, 0.5);
     font-weight: 600;
+    font-size: 11px;
+    
 }
 .client > .card-body > p > span {
     color: #14A0C6;
     font-weight: 700;
 }
+
+                                    /* PHONES FOR CLIENT AND ARTISAN */
+                        
+#finder2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    background: #000033;
+}
+
+                                    /* GRAY PHONE ARTISAN ILLUSTRATOR */
+ .found1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    height: 80vh;
+    background: #000033;
+}                                   
+.artisanp {
+    position: absolute;
+    width: 14rem;
+    height: 39rem;
+    left: 16rem;
+    bottom: 0rem;
+    z-index: 1;
+    background-color: transparent;
+}
+                                    /* BLUE PHONE CLIENT ILLUSTRATOR*/
+.found2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
+    height: 80vh;
+    background: #000033;
+}                                    
+.clientp {
+    position: absolute;
+    width: 14rem;
+    height: 39rem;
+    right: 16rem;
+    bottom: 0rem;
+    z-index: 1;
+    background-color: transparent;
+}
+
+
 
                 /* LAST ILLUSTRATOR PAYMENT */
 
@@ -527,25 +599,37 @@ p.card-text {
     height: 85vh;
     background: #000033 ;
 }
+.paid1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50% !important ;
+    height: 85vh;
+    background: transparent;
+}
+.paid2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50% !important;
+    height: 85vh;
+    background: transparent;
+}
 .payer{
     position: absolute;
-    width: 15rem;
+    width: 28rem;
     height: 27rem;
-    left: 20rem;
-    bottom: 3rem;
+    left: 21.5rem;
+    top: 2.3rem;
+    z-index: 1;
     background-color: transparent;
 }
-.Yline3{
-    position: absolute;
-    height: 1rem;
-    width: 10rem;
-    bottom: 17rem;
-}
+
 .pay {
     position: absolute;  
     border-radius: 50% !important;
-    left: 13rem;
-    bottom: -9rem;
+    right: 6rem;
+    top: 8rem;
     border: none;
     background-color: transparent;
 }
@@ -559,11 +643,13 @@ p.card-text {
 .pay > .card-body > h5{
     color: #0069F0;
     font-weight: 900;
+    font-size: 15px;
 }
 
 .pay > .card-body > p {
     color: rgba(0, 0, 0, 0.5);
     font-weight: 600;
+    font-size: 11px;
 }
 .pay > .card-body > p > span {
     color: #0069F0;
@@ -606,19 +692,19 @@ p.card-text {
     width: 100%;
     height: 20vh;
     background: transparent;
-}
-.col{
+} 
+.coll {
     width: 33.33%;
     height: 20vh;
     text-align: center;
     background:transparent;
 }
-.col > ul > li > a {
+.coll > ul > li > a {
     list-style: none;
     color: white;
     text-decoration: none;
 }
-.col > ul > li {
+.coll > ul > li {
     list-style: none;
 }
 .channels > li >a{
@@ -628,8 +714,8 @@ p.card-text {
     display: inline-block;
     text-align: center;
 }
-.col > ul {
-    margin-top: 2rem;
+.coll > ul {
+    margin-top: 2rem !important;
     text-align: center;
 }
 .fwork >.eat{
@@ -644,56 +730,370 @@ p.card-text {
     background: transparent;
     color: white;
     width: 100%;
-    height: 5rem;
+    height: 5vh;
 }
 .sole > h6{
     font-size: x-small;
 }
 
-
-@media(max-width: 700px) {
-    html,
-    body {
-        padding: 0;
-        margin: 0;
-    }
-    #aside{
-        margin: 0rem 0rem;
-    }
+@media(max-width: 1024px) {
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+.caro {
+    width: 100%;
+    height: 29vh;
+}
+.carousel-item{
+    margin-top: 4rem;
     
-    .cat > ul > li {
-        display: block;
-        padding: 1rem;
-    }
-    .cat {
-        position: relative;
-        background-color: blue;
-        height: 50vh;
-        width: 70%;
-        top: 0;
-        left: 56px;
-        text-align: left;
-        z-index: 2;
-        border-radius: 22px;
-    }
-    .cat > ul {
-        margin-right: 28px;
-    }
+}
+.caroJ{
+    position: relative;
+    display: flex;
+    justify-content: safe;
+}
+#hero {
+    height: 37vh;
+    width: 100%;
+    background: #0a0a0a;
+}
+#feat{
+    height: 50vh;
+}
+.header{
+    height: 5vh;
+}
+.header > h1{
+    font-size: 2.5rem;
+    padding-top: 1rem;
+}
+#features{
+    height: 45vh;
+}
+.column {
+    height: 45vh;
+}
+#sign_up,
+.up1, .up2 {
+    height: 32vh;
+}
+.signup{
+    width: 24rem;
+    height: 23rem;
+    left: 14.3rem;
+    top: 2.3rem;
+}
+.download{
+    right: 3rem;
+    top: 7rem;
+}
+#sign_in,
+.in1, .in2 {
+    height: 32vh;
+}
+.signin{
+    width: 24rem;
+    height: 23rem;
+    right: 14.3rem;
+    top: 2.3rem;
+}
+.install {
+    left: 3rem;
+    top: 7rem;
+}
+#finder1,
+.fclient,
+.fartisan {
+    height: 16vh;
+}
+.client{
+    right: 8rem;
+}
+.artisan{
+    left: 8rem;
+}
+#finder2,
+.found1,
+.found2 {
+    height: 37vh;
+}
+.clientp{
+    width: 13rem;
+    height: 35rem;
+    right: 7rem;
+}
+.artisanp{
+    width: 13rem;
+    height: 35rem;
+    left: 7rem;
+}
+#payment,
+.paid1, .paid2 {
+    height: 32vh;
+}
+.payer {
+    width: 24rem;
+    height: 23rem;
+    left: 14.3rem;
+    top: 2.3rem;
+}
+.pay{
+    right: 3rem;
+    top: 4rem;
+}
 
-    .btn {
-        margin-top: 12px;
-        margin-left: 20px;
-        width: 100%
-    }
+#now{
+    height: 10vh;
+}
+       
+}
 
-    /* .feat {
+@media(max-width: 768px) {
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+#aside{
+    margin: 0rem 0rem;
+}
+button > .navbar-toggler {
+    z-index: 2;
+} 
+.cat > ul > li {
+    display: block;
+    padding: 1rem;
+}
+.cat {
+    position: absolute;
+    background-color: #000000;
+    height: 30vh;
+    width: 95%;
+    top: 63px;
+    left: 10px;
+    text-align: left;
+    z-index: 6;
+}
+.cat > ul {
+    margin-right: 28px;
+}
+.btn {
+    margin-top: 12px;
+    margin-left: 20px;
+    width: 100%
+}
+.carousel-item{
+    position: relative;
+    margin-top: 3rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align-last: center;
+    height: 50vh;
+}
+.caro {
+    width: 100%;
+    height: 61vh;
+}
+.wide{
+    width: 56%;
+    position: absolute;
+    left: 3rem;
+    bottom: 9rem;
+}
+.caroJ{
+    position: relative;
+    display: flex;
+    justify-content: safe;
+}
+#hero {
+    height: 75vh;
+    width: 100%;
+    background: #0a0a0a;
+}
+.carousel-caption{
+    right: 1rem !important;
+    left: 4rem !important;
+    bottom: 0rem !important;
+}
+.carousel-caption > h5 {
+    font-size: 20px;
+    line-height: 2rem;
+}
+.carousel-caption > p {
+    font-size:16px;
+    line-height: 1.5rem;
+}
+#feat{
+    height: 80vh;
+    width: 100%;
+}
+.header {
+    height: 9vh;
+}
+#features{
+    height: 70vh;
+}
 
-    }   
-    .how {
-
-    } */
+.columno {
+    height: 67vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#features > .columno > .card{
+    width: 10rem !important;
+    height: 6.5rem;
+}
+#features > .columno > .card > .card-body > h5.card-title{
+    font-size: 12px !important;
+    margin-bottom: 3px !important;
 
 }
+#features > .columno > .card > .card-body > p .card-text {
+    font-size: 9px !important;
+    color: white;
+}
+#features > .columno > .card > .card-body {
+    padding: 0rem !important;
+}
+#features > .columno >.card > img {
+    width: 11%;
+    margin-top: 0.2rem;
+}
+#bid{
+    margin-top: 6px;
+    margin-bottom: 0px;
+    width: 14%;
+}
+#bidder{
+    margin-bottom: -20px;
+}
+#email{
+    width: 11%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+#star{
+    margin-bottom: -3px;
+    width: 15%;
+}
+#chatting{
+    margin-bottom: -3px;
+    width: 11%;
+}
+#chat{
+    margin-bottom: -20px;
+}
+.holder > h5.card-title{
+    font-size: 0.99rem;
+}
+.holder > p.card-text {
+    font-size: 12px;
+    color: white;
+}
+.holder > .card > .card-body {
+    padding: 2rem;
+}
+#rating{
+    margin-bottom: -20px;
+}
+.up1,
+.in1,
+#finder2,
+.paid1{
+    display: none;
+}
+.up2,
+.in2,
+.paid2 {
+    width: 100% !important;
+    height: 32vh;
+}
+.download{
+    right: 0rem;
+    top: 1rem;
+}
+.install {
+    left: 0rem;
+    top: 1rem;
+}
+#finder1{
+    flex-direction: column;
+    height: 61vh ;
+}
+.fartisan,
+.fclient{
+    height: 50% !important;
+}
+.client{
+    right: 0rem;
+    top: 0.5rem;
+}
+.artisan{
+    left: 0rem;
+    top: 0.5rem;
+}
+.pay{
+    max-width: 13rem !important;
+    height: 13rem !important;
+    right: 0rem;
+    top: 0.5rem;
+}
+#now{
+    height: 15vh;
+}
+#now > .btn {
+    background-color: #F7B222;
+    width: 70%;
+    height: 38%;
+    margin-top: 1rem;
+}
+#footer{
+    height: 30vh;
+}
+.feeto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+}
+#foot{
+    flex-direction: column;
+    height: 22vh;
+}
+ul.channels{
+    margin-top: 1rem;
+}
+.coll{
+    width: 100%;
+    height: 30%;
+}
+.coll > ul {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+.fwork >.eat {
+    margin-left:  0rem;
+}
+.privacy >.ate{
+    margin-right: 0rem;
+}
+.sole{
+    height: 7vh;
+}
+.sole > h6 {
+    font-size: 15px;
+}
+
+
+
+
+}
+
+
 
 
 
