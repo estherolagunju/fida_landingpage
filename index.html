@@ -1,459 +1,436 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   
-    <link rel="stylesheet" href="fida.css" type="text/css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="stylesheet" href="fida.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
 
     <!-- bootstrap css local file  -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
 
     <title>fida_landing page</title>
   </head>
   <body>
-        
-                                    <!-- SEGMENT 1 START -->
-    <div class="container-fluid"id="hero">
-                                       <!-- LOGO  -->
-        <nav class="navbar navbar-expand-lg navbar-light "   >
-            <a class="navbar-brand" id="aside" href="#"> fida </a>
-        <button class="navbar-toggler bg-black" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="material-icons menu">menu</span>
-        </button>     
-                                   <!-- RIGHT HAND OF NAVBAR -->
-            <div class="collapse navbar-collapse" id="navbarText">
-            <div class="cat" id="myNavbar">
-            <ul>                
-                <li class="feat"><a href="#feature" >Features</a></li>
-                <li class="how"><a href="#How it works"  >How it works </a></li>
-
-                <button type="button" class="btn">
-                  <a href="https://play.google.com" target="_blank" class="topa"><img src="image/menu play.svg" style="width: 100%;" alt="menu play"> </a>
-            </button>                
-            </ul>            
-           </div> 
+    <!-- SEGMENT 1 START -->
+    <div class="container-fluid" id="hero">
+      <!-- LOGO  -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" id="aside" href="#"> fida </a>
+        <img src="image/hamburger.png" class="img-fluid navbar-toggler" data-toggle="collapse" data-target="#navbarText"/>
+        <!-- RIGHT HAND OF NAVBAR -->
+        <div class="collapse navbar-collapse" id="navbarText">
+          <div class="cat" id="myNavbar">
+            <ul>
+              <li class="feat"><a href="#feature" class="underline">Features</a></li>
+              <li class="how"><a href="#How it works" class="underline">How it works </a></li>
+              <li id="no_decoration">
+                <a href="https://play.google.com" target="_blank">
+                  <img src="image/playstore.png" class="img-fluid"/>
+                </a>
+              </li>
+            </ul>
           </div>
-        </nav>   
-                                           <!-- CARISOLE -->
-    <div id="carouselExampleCaptions" class="carousel slide caro" data-ride="carousel">
+        </div>
+      </nav>
+      <!-- CARISOLE -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide caro"
+        data-ride="carousel"
+      >
         <ol class="carousel-indicators">
-           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li
+            data-target="#carouselExampleCaptions"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
         </ol>
-    <div class="carousel-inner caroJ " >
-                                              <!-- SLIDE 1 -->
-        <div class="carousel-item active " id="caro1" >
-         <img src="image/slide-svg 1.svg" class="d-block wide  " id="image1" alt="slide 1">
-       <div class="carousel-caption  d-md-block mot ">
-         <h5>Professionals <br> On Demand</h5>
-         <p>In need of services like plumbing, tailoring or <br> carpentry and more. Fida got you covered </p>
-      </div>
-    </div>
-                                                 <!-- SLIDE 2 -->
-    <div class="carousel-item  " id="caro2"  >
-         <img src="image/slide_svg 2.svg" class="d-block wide " id="image2" alt=" slide 2">
-     <div class="carousel-caption  d-md-block mot ">
-          <h5>Get more done <br> for less</h5>
-          <p>Fees are tailored to suit your needs; you <br> don't have to worry about expensive rates.</p>
-      </div>
+        <div class="carousel-inner caroJ">
+          <!-- SLIDE 1 -->
+          <div class="carousel-item active" id="caro1">
+            <img
+              src="image/slide-svg 1.svg"
+              class="d-block wide"
+              id="image1"
+              alt="slide 1"
+            />
+            <div class="carousel-caption d-md-block mot">
+              <h5>
+                Professionals <br />
+                On Demand
+              </h5>
+              <p>
+                In need of services like plumbing, tailoring or
+                carpentry and more. Fida got you covered
+              </p>
+            </div>
           </div>
-                                                   <!-- SLIDE 3 -->
-      <div class="carousel-item " id="caro3" >
-             <img src="image/slide_svg 3.svg" class="d-block wide  " id="image3" alt=" slide 3">
-          <div class="carousel-caption d-md-block mot ">
-            <h5>Services at your <br> fingertips</h5>
-            <p>Get satisfactory service, timely, and at an <br> affordable price.</p>
+          <!-- SLIDE 2 -->
+          <div class="carousel-item" id="caro2">
+            <img
+              src="image/slide_svg 2.svg"
+              class="d-block wide img-fluid"
+              id="image2"
+              alt=" slide 2"
+            />
+            <div class="carousel-caption d-md-block mot">
+              <h5>
+                Get more done <br />
+                for less
+              </h5>
+              <p>
+                Fees are tailored to suit your needs; you 
+                don't have to worry about expensive rates.
+              </p>
+            </div>
           </div>
-     </div>
-     
-     </div>
-                                                  <!-- ARROW POINTER -->
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-       <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <!-- SLIDE 3 -->
+          <div class="carousel-item" id="caro3">
+            <img
+              src="image/slide_svg 3.svg"
+              class="d-block wide img-fluid"
+              id="image3"
+              alt=" slide 3"
+            />
+            <div class="carousel-caption d-md-block mot">
+              <h5>
+                Services at your <br />
+                fingertips
+              </h5>
+              <p>
+                Get satisfactory service, timely, and at an
+                affordable price.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ARROW POINTER -->
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleCaptions"
+          role="button"
+          data-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-       </a>
+        </a>
+      </div>
     </div>
-    </div>
-
-                                                   <!-- FEATURES -->
-  
-    <div class="container-fluid" id="feat">
-                            
-     <section class="container-fluid" id="head">
+    
+                           <!--  section features-->
+      <section class=" standard " > 
+      
         <div class="header">
           <h1 id="feature">Features</h1>
         </div>
-    </section>
-      
-
-<section class="container-fluid  " id="features"> 
- <div class="columno  d-s-block">
-                   <!-- card 1 -->
-<div class="card walletter" style="width: 14rem;">
-<img src="image/wallet.svg" id="wallet" class="card-img-top" alt="wallet">
-<div class="card-body">
-<h5 class="card-title">Wallet</h5>
-<p class="card-text">Deposit and Withdraw your earnings with ease</p>
-</div>
-</div>
-                   <!-- card 3 -->
-
-<div class="card chatter" style="width: 14rem;">
-<img src="image/chat.svg" id="chatting" class="card-img-top" alt="chat">
-<div class="card-body">
-<h5 class="card-title">Chat</h5>
-<p class="card-text" id="chat">Artisan or Client chat with each other after accepting to work together</p>
-</div>
-</div> 
-                      <!-- card 5 -->
-
-<div class="card rater" style="width: 14rem;">
-<img src="image/star.svg" id="star" class="card-img-top" alt="star">
-<div class="card-body">
-<h5 class="card-title">Ratings</h5>
-<p class="card-text" id="rating">Clients can rate every Artisan worked with and foster work accountability</p>
-</div>
-</div>
-
- </div> 
-
-
-   <div class="columno d-s-block"> 
-     
-                <!-- card 2 -->
-<div class="card bida" style="width: 14rem;">
-<img src="image/bidding.svg" id="bid" class="card-img-top" alt="bidding">
-<div class="card-body">
-<h5 class="card-title">Bidding system</h5>
-<p class="card-text" id="bidder">Artisans bid for jobs offering at their own competitive pricing </p>
-</div>
-</div>            
-                      <!-- card 4 -->
-
-<div class="card emailer" style="width: 14rem;">
-<img src="image/email fida.svg" id="email" class="card-img-top" alt="email">
-<div class="card-body">
-<h5 class="card-title">Email Notification</h5>
-<p class="card-text">Both Artisans and Clients are notified every step of the way.</p>
-</div>
-</div>
-       
-                <!-- card 6 -->
-<div class="card disputter" style="width: 14rem;">
-<img src="image/quick.svg" id="dispute" class="card-img-top" alt="quick">
-<div class="card-body">
-<h5 class="card-title">Quick Dispute Resolution</h5>
-<p class="card-text">Admin are always available to settle dispute arising</p>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<section class="container-fluid " id="features">  
-    <div class="column d-s-none">
-                          <!-- card 1 -->
-      <div class="card walletter" style="width: 14rem;">
-        <img src="image/wallet.svg" id="wallet" class="card-img-top" alt="wallet">
-        <div class="card-body">
-          <h5 class="card-title">Wallet</h5>
-          <p class="card-text">Deposit and Withdraw your <br> earnings with ease</p>
-        </div>
-      </div> 
-                            <!-- card 4 -->
-
-      <div class="card emailer" style="width: 14rem;">
-        <img src="image/email fida.svg" id="email" class="card-img-top" alt="email">
-        <div class="card-body">
-          <h5 class="card-title">Email Notification</h5>
-          <p class="card-text">Both Artisans and Clients are <br> notified every step of the way.</p>
-        </div>
-      </div>
-    
-    </div>
-
-      <div class="column d-s-none">
-                            <!-- card 2 -->
-      <div class="card bida" style="width: 14rem;">
-        <img src="image/bidding.svg" id="bid" class="card-img-top" alt="bidding">
-        <div class="card-body">
-          <h5 class="card-title">Bidding system</h5>
-          <p class="card-text" id="bidder">Artisans bid for jobs offering <br> at their own competitive <br> pricing </p>
-        </div>
-      </div>        
-                             <!-- card 5 -->
-
-      <div class="card rater" style="width: 14rem;">
-        <img src="image/star.svg" id="star" class="card-img-top" alt="star">
-        <div class="card-body">
-          <h5 class="card-title">Ratings</h5>
-          <p class="card-text" id="rating">Clients can rate every Artisan <br> worked with and foster work <br> accountability</p>
-        </div>
-      </div>
-
-      </div>
-
-      <div class="column d-s-none">
-                            <!-- card 3 -->
-
-      <div class="card chatter" style="width: 14rem;">
-        <img src="image/chat.svg" id="chatting" class="card-img-top" alt="chat">
-        <div class="card-body">
-          <h5 class="card-title">Chat</h5>
-          <p class="card-text" id="chat">Artisan or Client chat with <br> each other after accepting to <br> work together</p>
-        </div>
-      </div>
-                                    <!-- card 6 -->
-
-      <div class="card disputter" style="width: 14rem;">
-        <img src="image/quick.svg" class="card-img-top" alt="quick">
-        <div class="card-body">
-          <h5 class="card-title">Quick Dispute Resolution</h5>
-          <p class="card-text">Admin are always available <br> to settle dispute arising</p>
-        </div>
-      </div>
-
-    </div>
-
-    </section>
-
-    </div>
-
-
-                                  <!-- HOW IT WORKS -->
-  <div class="container-fluid" id="work">
-      <section class="container-fluid" id="head">
-        <div class="header">
-            <h1 id="How it works">How it works</h1>
-        </div>
-      </section>
-      <div class="container-fluid " id="sign_up"  >
-          <section class="container-fluid up1">
-            <img src="image/sign-up.png"class="signup"  alt="signup image">
-          </section>
-
-          <section class="container-fluid holder  up2">
-            <div class="card bg-white  download" style="width: 13rem; height: 13rem;">
-                <h3 >1</h3>
-              <div class="card-body">
-                <h5 class="card-title">Download & signup</h5>
-                <p class="card-text">After Download, you can <br> sign up as a <span>Client</span> or <span>Artisan</span> <br> within seconds to get started</p>
-              </div>
-            </div>
-          </section>
-      </div>
-    
-  </div>
-                                             
-                          <!--SIGN_IN ILLUSTRATOR-->
-
-<div class="container-fluid" id="work">
-     
-      <div class="container-fluid " id="sign_in"  >
-        <section class="container-fluid in1">
-            <img src="image/sign-in.png"class="signin"  alt="signin image">
-        </section>
-
-        <section class="container-fluid holder  in2">
-            <div class="card bg-white  install" style="width: 13rem; height: 13rem;">
-                <h3 >2</h3>
-              <div class="card-body">
-                <h5 class="card-title">Signin</h5>
-                <p class="card-text">After installation, you can <br> login within seconds to get <br> started</p>
-              </div>
-            </div>
-          </section>  
-      </div>
-    
-  </div>
-
-                                  <!-- DOUBLE FIND CLIENT AND ARTISAN-->
-    <div class="container-fluid" id="finder1">
-                                    <!-- ROUND CARD FIND ARTISAN -->
-       <section class="container-fluid holder  fartisan">
-         <div class="card bg-white  artisan" style="width: 13rem; height: 13rem;">
-          <h3 >3</h3>
+                            <!-- card 1 -->
+        <div class="card stand walletter" style="width: 14rem;">
+          <img src="image/wallet.svg" id="wallet" class="card-img-top" alt="wallet">
           <div class="card-body">
-          <h5 class="card-title">Find Client jobs <br> OR Create your Gig</h5>
-          <p class="card-text">As an <span>Artisan</span> find<br>avilable jobs within your<br>niche to do</p>
+            <h5 class="card-title">Wallet</h5>
+            <p class="card-text">Deposit and Withdraw your <br> 
+              earnings with ease
+            </p>
+          </div>
+        </div> 
+                              <!-- card 2 -->
+        <div class="card stand bida" style="width: 14rem;">
+          <img src="image/bidding.svg" id="bid" class="card-img-top" alt="bidding">
+          <div class="card-body">
+            <h5 class="card-title">Bidding system</h5>
+            <p class="card-text" id="bidder">Artisans bid for jobs offering <br> 
+              at their own competitive <br> 
+              pricing
+             </p>
+          </div>
+        </div>       
+                                      <!-- card 3 -->
+  
+        <div class="card stand chatter" style="width: 14rem;">
+          <img src="image/chat.svg" id="chatting" class="card-img-top" alt="chat">
+          <div class="card-body">
+            <h5 class="card-title">Chat</h5>
+            <p class="card-text" id="chat">Artisan or Client chat with <br>
+               each other after accepting to <br> 
+               work together
+              </p>
           </div>
         </div>
+                              <!-- card 4 -->
+  
+        <div class="card stand emailer" style="width: 14rem;">
+          <img src="image/email fida.svg" id="email" class="card-img-top" alt="email">
+          <div class="card-body">
+            <h5 class="card-title">Email Notification</h5>
+            <p class="card-text">Both Artisans and Clients are <br> 
+              notified every step of the way.
+            </p>
+          </div>
+        </div>
+                         <!-- card 5 -->
+  
+        <div class="card  stand rater" style="width: 14rem;">
+          <img src="image/star.svg" id="star" class="card-img-top" alt="star">
+          <div class="card-body">
+            <h5 class="card-title">Ratings</h5>
+            <p class="card-text" id="rating">Clients can rate every Artisan <br> 
+                worked with and foster work <br> 
+                accountability
+            </p>
+          </div>
+        </div>
+                                       <!-- card 6 -->
+        <div class="card stand disputter" style="width: 14rem;">
+          <img src="image/quick.svg" class="card-img-top" alt="quick">
+            <div class="card-body">
+              <h5 class="card-title">Quick Dispute Resolution</h5>
+              <p class="card-text">Admin are always available <br> 
+                to settle dispute arising
+              </p>
+            </div>
+        </div>  
+      </section>    
+            <!-- section feature ends -->
+  
+    <!-- HOW IT WORKS -->
+    <div class="container-fluid" id="work">
+      <section class="container-fluid" id="head">
+        <div class="header">
+          <h1 id="How it works">How it works</h1>
+        </div>
       </section>
-                                    <!-- ROUND CARD FIND CLIENT -->
-      <section class="container-fluid holder fclient">
-        <div class="card bg-white  client" style="width: 13rem; height: 13rem;">
-          <h3 >3</h3>
-        <div class="card-body">
-          <h5 class="card-title">Find Artisan Gigs <br> OR create a job</h5>
-          <p class="card-text">As a <span>Client</span> find available<br>gigs that fits into your job<br>description</p>
+      <!-- dan's code -->
+       <!-- 1 -->
+      <div class="item-container">
+        <img src="image/sign-up.png" class=" img-fluid mobile-hide"alt="signup image" />
+        <div class="circle-white">
+          <p class="circle-p">
+            <span class="circle-number">1</span><br>
+            <span class="circle-title">Download & signup</span>
+          </p>
+          <p class="circle-text">
+              After Download, you can sign up as a 
+              <span class="circle-bold">Client</span> or <span class="circle-bold">Artisan</span>
+                within seconds to get started
+          </p>
         </div>
       </div>
-      </section>
-    </div>      
+      <!-- 2 -->
+      <div class="item-container">
+        <div class="circle-white">
+          <p class="circle-p">
+            <span class="circle-number">2</span><br>
+            <span class="circle-title">Signin</span>
+          </p>
+          <p class="circle-text">
+            After installation, you can login within seconds to get started
+          </p>
+        </div>
+        <img src="image/sign-in.png" class=" img-fluid mobile-hide"alt="signin image" />
+      </div>
+      <!-- 3a and 3b -->
+      <div>
+        <div class="item-top">
+          <!-- 3a -->
+          <div class="circle-white mar">
+            <p class="circle-p">
+              <span class="circle-number-3">3</span><br>
+              <span class="circle-title-3">
+                Find Client jobs <br />
+              OR Create your Gig
+              </span>
+            </p>
+            <p class="circle-text">
+              As an <span class="circle-bold-3">Artisan</span> find available jobs within your niche to do
+            </p>
+          </div>
+          <!-- 3b -->
+          <div class="circle-white mal">
+            <p class="circle-p">
+              <span class="circle-number-4">3</span><br>
+              <span class="circle-title-4">
+                Find Artisan Gigs <br />
+              OR create a job
+              </span>
+            </p>
+            <p class="circle-text">
+              As a <span class="circle-bold-4">Client</span> find available gigs that fits into your job description
+            </p>
+          </div>
+        </div>
+        <div class="item-bottom">
+          <img src="image/artisan.png" class=" img-fluid mobile-hide"alt="signin image" />
+          <img src="image/client.png" class=" img-fluid mobile-hide"alt="signin image" />
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="item-container">
+        <img src="image/payment2.png" class=" img-fluid mobile-hide"alt="signup image" />
+        <div class="circle-white">
+          <p class="circle-p">
+            <span class="circle-number">4</span><br>
+            <span class="circle-title">
+              Make Payment <br />
+              OR Get paid</span>
+          </p>
+          <p class="circle-text">
+            <span class="circle-bold">Artisan</span> gets paid after job
+              confirmation from <span class="circle-bold">Client</span>
+          </p>
+        </div>
+      </div>
+      <!-- dan's code ends -->
 
-                                    <!-- ARTISAN BLUE TEXT ILLUSTRATOR -->
+    <!-- YELLOW DOWNLOAD BUTTON -->
 
-    <div class="container-fluid" id="finder2">
-        <section class="container-fluid found1" > 
-           <img src="image/artisan.png"class="artisanp"  alt="artisan"> 
+    <section class="container-fluid" id="now">
+      <button type="button" class="btn rounded-pill">
+        <a href="https://play.google.com">Download now</a>
+      </button>
+    </section>
+
+    <!--  FOOTER  -->
+    <div class="container-fluid" id="footer">
+      <!-- MOBILE VIEW BELOW -->
+      <div class="feeto d-s-block mt-3">
+        <!-- CONTACT CHANNELS -->
+        <section class="container-fluid" id="foot">
+          <div class="container-fluid coll">
+            <ul class="channels">
+              <li>
+                <a href="#"><img src="image/facebook.svg" alt="facebook" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="image/whatsapp.svg" alt="whatsapp" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="image/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
+
+          <!--  CONTACT EMAIL AND PRIVACY POLICY -->
+          <div class="container-fluid coll">
+            <ul class="privacy">
+              <li><a href=" mailto:info@fida.com.ng">info@fida.com.ng</a></li>
+              <li class="ate"><a href="#">privacy policy</a></li>
+            </ul>
+          </div>
+
+          <!-- FEATURE AND H-I-W -->
+
+          <div class="container-fluid coll">
+            <ul class="fwork">
+              <li><a href="#How it works">how it works</a></li>
+              <li class="eat"><a href="#feature">Features</a></li>
+            </ul>
+          </div>
         </section>
-                                       <!-- CLIENT GRAY TEXT ILLUSTRATOR -->
-        <section class="container-fluid found2">
-          <img src="image/client.png"class="clientp"  alt="client">
+        <!-- JESUS IS OUR FOUNDATION -->
+        <section class="container-fluid sole">
+          <h6>
+            copyrights @ 2021 <br />
+            Fida Synergy Technologies
+          </h6>
         </section>
-    
-      
-    </div>
-
-
-                                  <!-- LAST PAYMENT ILLUSTRATOR -->
-     
-      <div class="container-fluid " id="payment"  >
-          <section class="container-fluid paid1">
-            <img src="image/payment.png"class="payer"  alt="payment image">
-          </section>
-
-          <section class="container-fluid holder  paid2">
-            <div class="card bg-white  pay" style="width: 13rem; height: 13rem;">
-                <h3 >4</h3>
-              <div class="card-body">
-                <h5 class="card-title">Make Payment <br> OR Get paid</h5>
-                <p class="card-text"> <span>Artisan</span> gets paid after job<br> confirmation from <span>Client</span></p>
-              </div>
-            </div>
-          </section>
       </div>
 
-                                  <!-- YELLOW DOWNLOAD BUTTON -->
-    
- <section class="container-fluid" id="now">
-      <button type="button" class="btn rounded-pill"><a href="https://play.google.com" >Download now</a>
-      </button>
- </section>
+      <!-- DESKTOP VIEW BELOW -->
 
-                                  <!--  FOOTER  -->
-<div class="container-fluid" id="footer">
+      <div class="feet d-s-none">
+        <!-- FEATURE AND H-I-W -->
+        <section class="container-flui" id="foot">
+          <div class="container-fluid coll">
+            <ul class="fwork">
+              <li><a href="#How it works">how it works</a></li>
+              <li class="eat"><a href="#feature">Features</a></li>
+            </ul>
+          </div>
 
+          <!-- CONTACT CHANNELS -->
+          <div class="container-fluid coll">
+            <ul class="channels">
+              <li>
+                <a href="#"><img src="image/facebook.svg" alt="facebook" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="image/whatsapp.svg" alt="whatsapp" /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="image/instagram.svg" alt="instagram"
+                /></a>
+              </li>
+            </ul>
+          </div>
 
-                                      <!-- WHAT WE SEE ON MOBILE -->
-  <div class="feeto d-s-block">
+          <!--  CONTACT EMAIL AND PRIVACY POLICY -->
+          <div class="container-fluid coll">
+            <ul class="privacy">
+              <li><a href="info@fida.com.ng">info@fida.com.ng</a></li>
+              <li class="ate"><a href="#">privacy policy</a></li>
+            </ul>
+          </div>
+        </section>
 
-
-                                      <!-- CONTACT CHANNELS -->
-  <section class="container-fluid" id="foot">                         
-    <div class="container-fluid coll">
-      <ul class="channels">
-        <li><a href="#"><img src="image/facebook.svg" alt="facebook"></a></li>
-        <li><a href="#"><img src="image/whatsapp.svg" alt="whatsapp"></a></li>
-        <li><a href="#"><img src="image/instagram.svg" alt="instagram"></a></li>
-      </ul>
+        <!-- JESUS IS OUR FOUNDATION -->
+        <section class="container-fluid sole">
+          <h6>copyrights @ 2021 Fida Synergy Technologies</h6>
+        </section>
+      </div>
     </div>
-    
-                                <!--  CONTACT EMAIL AND PRIVACY POLICY -->
-    <div class="container-fluid coll">
-      <ul class="privacy">
-        <li><a href=" mailto:info@fida.com.ng">info@fida.com.ng</a></li>
-        <li class="ate"><a href="#">privacy policy</a></li>
-      </ul>
-    </div>
-
-                               <!-- FEATURE AND H-I-W -->
-  
-    <div class="container-fluid coll">
-      <ul class="fwork">
-        <li><a href="#How it works">how it works</a> </li>
-        <li class="eat"><a href="#feature">Features</a></li>
-      </ul>
-    </div>
-
-  </section>  
-                                        <!-- JESUS IS OUR FOUNDATION -->
-  <section class="container-fluid sole">
-        <h6>copyrights @ 2021 <br> Fida Synergy Technologies</h6>
-  </section>
-</div>
-
-
-
-                                      <!-- WHAT WE SEE ON BIG SCREEN -->
-
-<div class="feet d-s-none">
-                                       <!-- FEATURE AND H-I-W -->
-  <section class="container-fluid" id="foot">
-    <div class="container-fluid coll">
-      <ul class="fwork">
-        <li><a href="#How it works">how it works</a> </li>
-        <li class="eat"><a href="#feature">Features</a></li>
-      </ul>
-    </div>
-
-                                         <!-- CONTACT CHANNELS -->
-    <div class="container-fluid coll">
-      <ul class="channels">
-        <li><a href="#"><img src="image/facebook.svg" alt="facebook"></a></li>
-        <li><a href="#"><img src="image/whatsapp.svg" alt="whatsapp"></a></li>
-        <li><a href="#"><img src="image/instagram.svg" alt="instagram"></a></li>
-      </ul>
-    </div>
-
-                                        <!--  CONTACT EMAIL AND PRIVACY POLICY -->
-    <div class="container-fluid coll">
-      <ul class="privacy">
-        <li><a href="info@fida.com.ng">info@fida.com.ng</a></li>
-        <li class="ate"><a href="#">privacy policy</a></li>
-      </ul>
-    </div>
-  </section>
-
-                                          <!-- JESUS IS OUR FOUNDATION -->
-  <section class="container-fluid sole">
-        <h6>copyrights @ 2021 Fida Synergy Technologies</h6>
-  </section>
-</div>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- bootstrap js local file -->
     <script src="/bootstrap/js/bootstrap.js"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
+
+
+
+  
+    
